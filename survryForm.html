@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./surveyForm.css" type="text/css">
+    </head>
+    <body>
+        <div class="background">
+            <header>
+            <h1 id="title">Herbsense Survey Form</h1>
+          </header>
+          <body>
+           <p id="description">Thank you for taking the time to help us improve the website</p>
+            <form id="survey-form">
+              <div class="form-group">
+              <label for="name" id="name-label">Name</label><br />
+              <input class="form-input" id="name" type="text" placeholder="Enter Your Name" name="name" required>
+              </div>
+              <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input class="form-input" id="email" type="email" placeholder="Enter a valid Email Address" name="email" required>
+                </div>
+              <div class="form-group">
+              <label for="number" id="number-label">Age</label>
+              <input class="form-input" id="number" type="number" min="10" max="140" step="1" placeholder="Enter Your Age" name="age">
+                </div>
+              <div class="form-group">
+              <label for="gender" id="gender-label">What is your gender?</label>
+              <select class="form-input"id="dropdown" name="gender">
+                <option value="man">Male</option>
+                <option value="woman">Female</option>
+                <option value="not-avaliable">Not avalible</option>
+              </select>
+                </div>
+              <div class="form-group">
+              <label for="choice" id="choice-label">Where did you heard of us?</label><br />
+              <input id="choice1" type="radio" name="choice" value="Instgram">
+              <label for="choice1">Instagram</label><br />
+              <input id="choice2" type="radio" name="choice" value="Wechat">
+              <label for="choice1">Wechat</label><br />
+              <input id="choice3" type="radio" name="choice" value="other">
+              <label for="choice3">Other</label><br />
+              </div>
+              <div class="form-group">
+              <label for="prodcut">Which product would you like the best?</label><br />
+              <input id="ultra-antioxidant" type="checkbox" name="product" value="ultra-antioxidant">
+              <label for="ultra-antixoidant">Ultra Antioxidant</label><br />
+              <input id="zinc-vitamin-b-plus" type="checkbox" name="product" value="zinc-vitamin-b-plus">
+              <label for="zinc-vitamin-b-plus">Zinc Vitamin B Plus</label><br />
+              <input id="luminous-essence" type="checkbox" name="product" value="luminous-essence">
+              <label for="luminous-essence">Luminous Essence</label><br />
+                </div>
+              <div class="form-group">
+                <label for="comments">Please leave your suggestions or comments for us:</label><br />
+              <textarea id="comments" name="comments" rows="6" cols="50" placeholder="Leave your comments here..."></textarea>
+                </div>
+              <div class="form-group">
+              <button type="submit" id="submit" form="survey-form" value="submit">Submit</button>
+                </div>
+             </form>
+          </body>  
+            </div>
+    </body>
+</html>
+
